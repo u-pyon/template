@@ -1,0 +1,12 @@
+/var/log/mysql/error.log /var/log/mysql/slow.log {
+        create 644 mysql mysql
+        notifempty
+    daily
+        rotate 14
+        missingok
+        nocompress
+        dateext
+        sharedscripts
+    postrotate
+    endscript
+}
